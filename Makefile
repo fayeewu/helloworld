@@ -1,5 +1,5 @@
 all:
-	docker build -t deis/helloworld .
+	docker build -t fayeewu/helloworld .
 
 run:
-	docker run -d -P deis/helloworld
+	docker run -d -P fayeewu/helloworld
