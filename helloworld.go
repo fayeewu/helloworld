@@ -23,4 +23,5 @@ func hello(w http.ResponseWriter, req *http.Request) {
 	log.Printf("%s %s\n", req.Proto, req.URL)
 	fmt.Fprintln(w, "Welcome to hello world firstly")
 	fmt.Fprintln(w, "Welcome to hello world so secondly")
+	fmt.Fprintln(w, "Welcome to hello world then thirdly")
 }
