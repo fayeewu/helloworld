@@ -11,7 +11,7 @@ func main() {
 	http.HandleFunc("/", hello)
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8090"
+		port = "80"
 	}
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
