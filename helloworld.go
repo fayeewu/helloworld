@@ -11,7 +11,7 @@ func main() {
 	http.HandleFunc("/", hello)
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "80"
+		port = "8090"
 	}
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
@@ -21,6 +21,5 @@ func main() {
 
 func hello(w http.ResponseWriter, req *http.Request) {
 	log.Printf("%s %s\n", req.Proto, req.URL)
-	fmt.Fprintln(w, "Welcome to Deis!")
-	fmt.Fprintln(w, "See the documentation at http://docs.deis.io/ for more information.")
+	fmt.Fprintln(w, "Welcome to hello world ...")
 }
