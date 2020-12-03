@@ -1,7 +1,8 @@
-FROM debian:jessie
+FROM golang:1.13-alpine as builder
+#FROM debian:jessie
 
 # install curl
-RUN apt-get update && apt-get install -qy curl
+#RUN apt-get update && apt-get install -qy curl
 
 # install go runtime
 # RUN curl -s https://storage.googleapis.com/golang/go1.2.2.linux-amd64.tar.gz | tar -C /usr/local -xz
