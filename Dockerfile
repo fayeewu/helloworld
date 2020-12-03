@@ -6,6 +6,6 @@ ADD . /go/src/github.com/fayeewu/helloworld
 # compile the binary
 RUN cd /go/src/github.com/fayeewu/helloworld && go install -v .
 
-EXPOSE 8090
+EXPOSE 80
 
 ENTRYPOINT ["/go/bin/helloworld"]
